@@ -4,16 +4,34 @@ const listAnggotaHTML = document.querySelector(".listAnggota");
 // Nambah Data anggota disini!!!
 const listAnggota = [
     {
-        img: "/assets/images/salman.png",
+        img: "/assets/images/ph-images/salman.png",
         alt: "Salman",
         h2: "Ketua Himpunan",
         h4: "Salman Firdaus"
     },
     {
-        img: "/assets/images/yoga.png",
+        img: "/assets/images/ph-images/yoga.png",
         alt: "Yoga",
         h2: "Wakil Himpunan",
         h4: "Yoga Prasetya"
+    },
+    {
+        img: "/assets/images/ph-images/caca.png",
+        alt: "Caca",
+        h2: "Bendahara",
+        h4: "Dhiya Ulhaq"
+    },
+    {
+        img: "/assets/images/ph-images/amel.png",
+        alt: "Amel",
+        h2: "Infentaris",
+        h4: "Amel"
+    },
+    {
+        img: "/assets/images/ph-images/mei.png",
+        alt: "Mei",
+        h2: "Sekretaris",
+        h4: "Mei Tri"
     }
 ];
 
@@ -41,11 +59,23 @@ const listProkerHTML = document.querySelector(".listProker");
 // Nambah Data proker disini!!
 const listProker = [
     {
-        h1: "Nama Proker",
+        h1: "Rapat Kerja",
         p: "deskripsi proker"
     },
     {
-        h1: "Nama Proker",
+        h1: "Rapat Besar",
+        p: "deskripsi proker"
+    },
+    {
+        h1: "IT Specta",
+        p: "deskripsi proker"
+    },
+    {
+        h1: "Kongres Ketua IT Specta",
+        p: "deskripsi proker"
+    },
+    {
+        h1: "Sinan",
         p: "deskripsi proker"
     }
 
