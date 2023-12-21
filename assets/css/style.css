@@ -345,7 +345,7 @@ body.active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 .logo {
@@ -567,16 +567,27 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
-  justify-content: center;
+  place-items: center;
 }
 
 .itemDivisi {
   background-color: bisque;
   padding: 10px;
+  margin: 0;
   border-radius: 13px;
   /* box-shadow: 7px 8px 15px grey; */
-  width: 250px;
+  width: 200px;
+  height: 80px;
   transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.itemDivisi h1 {
+  font-size: 35px;
 }
 
 .itemDivisi:hover {
@@ -588,15 +599,11 @@ main {
 \*-----------------------------------*/
 
 .about {
-  margin-top: -40px;
+  /* margin-top: -40px; */
   filter: blur(30);
-  padding-block: var(--section-padding);
-}
-
-.about-banner {
-  max-width: 500px;
-  margin-inline: auto;
-  margin-bottom: 80px;
+  /* padding-block: var(--section-padding); */
+  padding: 0 10px;
+  margin: 50px auto;
 }
 
 .about .btn {
@@ -719,7 +726,8 @@ main {
 \*-----------------------------------*/
 
 .project {
-  padding-block: var(--section-padding);
+  /* padding-block: var(--section-padding); */
+  padding: 50px 10px;
 }
 
 .project-list>li {
@@ -795,7 +803,8 @@ main {
 \*-----------------------------------*/
 
 .contact {
-  padding-block: var(--section-padding);
+  /* padding-block: var(--section-padding); */
+  padding: 80px 10px;
 }
 
 .contact-content {
@@ -928,9 +937,6 @@ textarea.input-field {
 }
 
 
-
-
-
 /*-----------------------------------*\
  * #FOOTER
 \*-----------------------------------*/
@@ -955,10 +961,6 @@ textarea.input-field {
   display: inline-block;
   color: var(--raw-seinna);
 }
-
-
-
-
 
 /*-----------------------------------*\
  * #GO TO TOP
@@ -989,10 +991,6 @@ textarea.input-field {
   transform: translateY(0);
 }
 
-
-
-
-
 /*-----------------------------------*\
  * #MEDIA QUERIES
 \*-----------------------------------*/
@@ -1000,7 +998,7 @@ textarea.input-field {
 /**
  * responsive for small than 370px screen
  */
-@media (max-width: 370px) {
+@media (max-width: 400px) {
 
   /**
    * REUSED STYLE
@@ -1041,34 +1039,23 @@ textarea.input-field {
   /**
    * DIVISI
    */
-
-   .linkItem {
-    text-decoration: none;
-   }
-
-   .listDivisi {
+  .listDivisi {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
-   }
+    padding: 50px 10px;
+  }
 
-   .listDivisi .itemDivisi {
-    background-color: grey;
-    width: 400px;
-    height: 300px;
-   }
+  .itemDivisi {
+    width: 100%;
+  }
 
   /**
    * ABOUT US
    */
-  .about-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
   .logo-aboutus {
-    width: 70%;
+    width: 100%;
   }
 
   .section-subtitle {
@@ -1238,17 +1225,7 @@ textarea.input-field {
   /**
    * DIVISI
    */
-
-  /* .stats-card .card-iconn {
-    width: 50px;
-    height: 50px;
-  } */
-
-  /* .stats-card .card-icon {
-    width: 70px;
-    height: 50px;
-  } */
-
+   
   .card-title {
     font-size: 20px;
     cursor: pointer;
@@ -1268,11 +1245,6 @@ textarea.input-field {
   /**
    * ABOUT US
    */
-  .about-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
   .logo-aboutus {
     width: 100%;
@@ -1359,11 +1331,6 @@ textarea.input-field {
     column-span: all;
   }
 
-
-  /**
-   * MODAL
-   */
-
   /**
    * REUSED STYLE
    */
@@ -1376,10 +1343,6 @@ textarea.input-field {
   .section-title {
     max-width: 380px;
   }
-
-
-
-
 }
 
 /**
@@ -1400,16 +1363,13 @@ textarea.input-field {
     max-width: 430px;
   }
 
-
-
   /**
    * STATS
    */
 
-  .stats-list {
-    grid-template-columns: 1fr 1fr;
+  .listDivisi {
+    padding-bottom: 50px;
   }
-
 
 
   /**
@@ -1670,27 +1630,6 @@ textarea.input-field {
     height: 100%;
   }
 
-
-
-
-  /**
-   * ABOUT
-   */
-
-  .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 30px;
-  }
-
-  .about-banner {
-    margin-bottom: 0;
-  }
-
-
-
-
   /**
    * SKILLS
    */
@@ -1750,8 +1689,6 @@ textarea.input-field {
     margin-left: -40px;
   }
 
-
-
   /**
    * FOOTER
    */
@@ -1767,10 +1704,6 @@ textarea.input-field {
   }
 
 }
-
-
-
-
 
 /**
  * responsive for larger than 1200px screen
@@ -1790,9 +1723,6 @@ textarea.input-field {
     max-width: 460px;
   }
 
-
-
-
   /**
    * HERO
    */
@@ -1805,39 +1735,31 @@ textarea.input-field {
     right: -80px;
   }
 
-
-
-
   /**
    * ABOUT
    */
 
-  .about-banner {
-    max-width: 450px;
+  .responsive {
+    padding-top: 50%;
+    /* 3:2 Aspect Ratio */
   }
 
-}
+  .contener {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 50%;
+    /* 3:2 Aspect Ratio */
+  }
 
-.responsive {
-  padding-top: 50%;
-  /* 3:2 Aspect Ratio */
-}
-
-.contener {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  padding-top: 50%;
-  /* 3:2 Aspect Ratio */
-}
-
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
 }
