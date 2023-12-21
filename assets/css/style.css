@@ -76,12 +76,12 @@
 
 body.dark_theme {
 
-  --bg-primary: hsl(0, 0%, 12%);
+  --bg-primary: hsl(0, 0%, 0%);
   --bg-secondary: hsl(0, 0%, 19%);
-  --color-primary: hsl(0, 0%, 100%);
+  --color-primary: hsl(0, 14%, 87%);
   --color-secondary: hsl(0, 0%, 62%);
-  --card-shadow: hsla(0, 0%, 0%, 0.4);
-  --input-bg: hsl(0, 0%, 16%);
+  --card-shadow: rgba(145, 239, 255, 0.5);
+  --input-bg: hsl(10, 0%, 16%);
 
   --shadow-1: 10px 10px 40px var(--card-shadow);
 
@@ -565,31 +565,37 @@ main {
 
 .listDivisi {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
   place-items: center;
 }
 
 .itemDivisi {
-  background-color: bisque;
+  background: var(--bg-secondary);
   padding: 10px;
   margin: 0;
   border-radius: 13px;
   /* box-shadow: 7px 8px 15px grey; */
-  width: 200px;
-  height: 80px;
+  width: 270px;
+  height: 100px;
   transition: all 0.2s;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  border-radius: var(--radius-12);
+  box-shadow: var(--shadow-1);
+  transition: var(--transition-1);
 }
 
 .itemDivisi h1 {
   font-size: 35px;
 }
 
+.itemDivisi:is(:hover, :focus) {
+  transform: translateY(-5px);
+}
 .itemDivisi:hover {
   box-shadow: 5px 5px 10px grey;
 }
@@ -816,6 +822,7 @@ main {
   align-items: flex-start;
   gap: 15px;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 
 .contact-item-icon {
@@ -1762,4 +1769,110 @@ textarea.input-field {
     height: 100%;
     border: none;
   }
+}
+
+
+/* Tambahan */
+.container {
+  padding-inline: 10px;
+}
+
+.bar-top {
+  width: 100%;
+  height: 10px;
+  position: fixed;
+  animation: progress-horizontal,progress-color;
+  top: 0;
+  left: 0;
+  animation-timeline:scroll();
+  transform-origin: 0%;
+
+}
+
+.bar-bottom {
+  width: 100%;
+  height: 5px;
+  position: fixed;
+  animation: progress-horizontal, progress-color;
+  bottom: 0;
+  left: 0;
+  animation-timeline:scroll();
+  transform-origin: 100%;
+
+}
+
+.bar-left {
+  width: 6px;
+  height: 100%;
+  position: fixed;
+  animation: progress-vertical, progress-color;
+  bottom: 0;
+  left: 0;
+  animation-timeline:scroll();
+  transform-origin: 0 100%;
+
+}
+
+.bar-right {
+  width: 6px;
+  height: 100%;
+  position: fixed;
+  animation: progress-vertical, progress-color;
+  bottom: 0;
+  right: 0;
+  animation-timeline:scroll();
+  transform-origin: 0 0%;
+
+}
+
+@keyframes progress-vertical {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes progress-horizontal {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes progress-color {
+  0% {
+    background-color: blueviolet;
+  }
+  20% {
+    background-color: red;
+  }
+  50% {
+    background-color: blue;
+  }
+  70% {
+    background-color: greenyellow;
+  }
+  100% {
+    background-color: aqua;
+  }
+}
+
+/* carousel contactus */
+/* Styles for the carousel */
+#carouselExampleControls {
+  max-width: 100%; /* Adjust the max-width based on your design */
+}
+
+.carousel-inner {
+  width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: Add border-radius for rounded corners */
 }
