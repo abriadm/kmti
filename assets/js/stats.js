@@ -2,32 +2,45 @@ const listDivisiHTML = document.querySelector(".listDivisi");
 
 const listDivisi = [
     {
-        link: '/pages/ph.html',
+        link: '/Pages/ph.html',
         h1: 'PH'
        
     },
     {
-        link: '/pages/iptek.html',
+        link: 'iptek.html',
         h1: 'IPTEK'
     
     },
     {
-        link: '/pages/humas.html',
+        link: '/Pages/humas.html',
         h1: 'HUMAS'
         
     },
     {
-        link: '/pages/kastrad.html',
+        link: '/Pages/kastrad.html',
         h1: 'KASTRAD'
 
     },
     {
-        link: '/pages/kwu.html',
+        link: '/Pages/kwu.html',
         h1: 'KWU'
        
     },
+
     {
-        link: '/pages/medpro.html',
+        link: '/Pages/kH.html',
+        h1: 'KH'
+       
+    },
+
+    {
+        link: '/Pages/SBO.html',
+        h1: 'SBO'
+       
+    },
+
+    {
+        link: '/Pages/medpro.html',
         h1: 'MEDPRO'
         
     }
@@ -50,3 +63,13 @@ const addDatatoHTML = () => {
 }
 
 addDatatoHTML();
+
+
+// this is logic by si tampan
+document.getElementById('contactUsBtn').addEventListener('click', function() {
+    redirectToContactUs();
+});
+
+function redirectToContactUs() {
+    window.location.href = '/Pages/ContactUs.html';
+}

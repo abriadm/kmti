@@ -16,7 +16,7 @@
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+  <link rel="shortcut icon" href=".assets/images/favicon.png" type="image/png">
 
 
   <!-- 
@@ -38,6 +38,13 @@
   <!-- 
     - #HEADER
   -->
+
+  <!-- Pemanis -->
+  <div class="bar-top"></div>
+  <div class="bar-bottom"></div>
+  <div class="bar-left"></div>
+  <div class="bar-right"></div>
+  <!-- pemanis -->
 
   <header class="header" data-header>
     <div class="container">
@@ -71,7 +78,7 @@
           </li>
 
           <li>
-            <a href="#contact" class="navbar-link">Contact.</a>
+            <a href="#Media" class="navbar-link">Media.</a>
           </li>
 
         </ul>
@@ -103,7 +110,7 @@
 
         <h2 class="h2 hero-title">Keluarga Mahasiswa Teknologi Informasi</h2>
 
-        <a href="#contact" class="btn btn-primary" style="margin-bottom: 5vh;">Contact Us</a>
+        <a href="ContactUs.html" id="contactUsBtn" class="btn btn-primary" style="margin-bottom: 5vh;">Contact Us</a>
 
       </div>
 
@@ -148,6 +155,11 @@
 
       <section class="about" id="about">
 
+
+        <figure class="about-banner">
+          <img src="/assets/images/kmti-bg.png" alt="All Squad" class="logo-aboutus">
+        </figure>
+
         <div class="about-content section-content">
 
           <p class="section-subtitle">About KMTI</p>
@@ -172,7 +184,7 @@
 
       <!-- - #STATS -->
         
-        <h3 class="h2 hero-title">Divisi</h3>
+        <h3 class="h2 hero-title" id="Divisi" >Divisi</h3>
 
         <div class="listDivisi">
           <!-- JavaScript Generated -->
@@ -313,105 +325,74 @@
 
         </section>
       
-      <!-- #CONTACT -->
+      <!-- #our social media -->
      
-        <section class="contact" id="contact">
+      <section class="contact" id="Media">
 
-          <div class="contact-content section-content">
+        <div class="contact-content section-content">
 
-            <p class="section-subtitle">Contact</p>
+          <p class="section-subtitle">Media.</p>
 
-            <h2 class="h3 section-title">Want to get in touch with us?</h2>
+          <h2 class="h3 section-title">Our Social Media Account</h2>
 
-            <p class="section-text">
-              Get in touch and let us know how we can help. Fill out the form and we'll be in touch as soon as possible.
-            </p>
+          <p class="section-text">
+            
+          </p>
 
-            <ul class="contact-list">
+          <ul class="contact-list">
 
-              <li class="contact-list-item">
+            <li>
+              <ul class="contac-social-list">
 
-                <div class="contact-item-icon">
-                  <ion-icon name="location-outline"></ion-icon>
-                </div>
+                <li>
+                  <a href="https://www.instagram.com/kmti_umy/" target="_blank" class="contact-social-link">
+                    <div class="tooltip">Instagram</div>
 
-                <div class="wrapper">
-                  <h3 class="h4 contact-item-title">Address:</h3>
-
-                  <a class="contact-info" href="https://goo.gl/maps/avVsE84acEeosgbJ6" target="_blank">
-                    Jl. Brawijaya, Geblagan, Tamantirto, Kec. Kasihan, Kabupaten Bantul, Daerah Istimewa Yogyakarta
-                    55183
+                    <ion-icon name="logo-instagram"></ion-icon>
                   </a>
-                </div>
+                </li>
 
-              </li>
+                <li>
+                  <a href="https://www.facebook.com/profile.php?id=100009568085884" target="_blank"
+                    class="contact-social-link">
+                    <div class="tooltip">Facebook</div>
 
-              <li class="contact-list-item">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
 
-                <div class="contact-item-icon">
-                  <ion-icon name="call-outline"></ion-icon>
-                </div>
+                <li>
+                  <a href="https://twitter.com/kmti_umy?s=21&t=riPXwgAy-rEJd7CxMRLKdQ" target="_blank"
+                    class="contact-social-link">
+                    <div class="tooltip">Twitter</div>
 
-                <div class="wrapper">
-                  <h3 class="h4 contact-item-title">Phone:</h3>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
 
-                  <a href="https://wa.me/+6285171680606" target="_blank" class="contact-info">0851-7168-0606</a>
+              </ul>
+            </li>
+            <li class="contact-list-item">
 
-                </div>
+              <div class="contact-item-icon">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-              </li>
+              <div class="wrapper">
+                <h3 class="h4 contact-item-title">Address:</h3>
 
-              <li class="contact-list-item">
+                <a class="contact-info" href="https://goo.gl/maps/avVsE84acEeosgbJ6" target="_blank">
+                  Jl. Brawijaya, Geblagan, Tamantirto, Kec. Kasihan, Kabupaten Bantul, Daerah Istimewa Yogyakarta
+                  55183
+                </a>
+              </div>
 
-                <div class="contact-item-icon">
-                  <ion-icon name="mail-outline"></ion-icon>
-                </div>
+            </li>
+          </ul>
 
-                <div class="wrapper">
-                  <h3 class="h4 contact-item-title">Email:</h3>
+        </div>
 
-                  <a href="mailto:info@jack.com" target="_blank" class="contact-info">kmti.umyogyakarta@gmail.com</a>
-
-                </div>
-
-              </li>
-
-              <li>
-                <ul class="contac-social-list">
-
-                  <li>
-                    <a href="https://www.instagram.com/kmti_umy/" target="_blank" class="contact-social-link">
-                      <div class="tooltip">Instagram</div>
-
-                      <ion-icon name="logo-instagram"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="https://www.facebook.com/profile.php?id=100009568085884" target="_blank"
-                      class="contact-social-link">
-                      <div class="tooltip">Facebook</div>
-
-                      <ion-icon name="logo-facebook"></ion-icon>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="https://twitter.com/kmti_umy?s=21&t=riPXwgAy-rEJd7CxMRLKdQ" target="_blank"
-                      class="contact-social-link">
-                      <div class="tooltip">Twitter</div>
-
-                      <ion-icon name="logo-twitter"></ion-icon>
-                    </a>
-                  </li>
-
-                </ul>
-              </li>
-
-            </ul>
-
-          </div>
-        </section>
+      </section>
 
     </article>
   </main>
