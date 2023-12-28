@@ -7,7 +7,7 @@ const listDivisi = [
        
     },
     {
-        link: 'iptek.html',
+        link: '/Pages/iptek.html',
         h1: 'IPTEK'
     
     },
@@ -28,7 +28,7 @@ const listDivisi = [
     },
 
     {
-        link: '/Pages/kH.html',
+        link: '/Pages/kh.html',
         h1: 'KH'
        
     },
