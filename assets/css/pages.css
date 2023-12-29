@@ -157,9 +157,10 @@ body.dark_theme {
  * #Anggota
 /* \*-----------------------------------* */
 .cards-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-gap: 20px;
+    margin: 80px;
+    grid-template-columns: repeat(3,1fr);
   }
   
   .card-anggota {
@@ -177,11 +178,15 @@ body.dark_theme {
     border-radius: 6px; /* Menambahkan sudut melengkung pada gambar jika diperlukan */
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     .cards-container {
-      flex-direction: column;
-      align-items: center;
+      grid-template-columns: repeat(7,1fr);
     }
+
+    @media (max-width: 800px) {
+      .cards-container {
+        grid-template-columns: repeat(1,1fr);
+      }
   
     .card-anggota {
       width: 80%;
@@ -283,4 +288,4 @@ body.dark_theme {
       background-color: aqua;
     }
   }
-  
+  }
