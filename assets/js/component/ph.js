@@ -1,84 +1,19 @@
-// Anggota Divisi
-const listAnggotaHTML = document.querySelector(".listAnggota");
-
-// Nambah Data anggota disini!!!
-const listAnggota = [
-    {
-        img: "/assets/images/ph-images/salman.png",
-        alt: "Salman",
-        h2: "Ketua Himpunan",
-        h4: "Salman Firdaus"
-    },
-    {
-        img: "/assets/images/ph-images/yoga.png",
-        alt: "Yoga",
-        h2: "Wakil Himpunan",
-        h4: "Yoga Prasetya"
-    },
-    {
-        img: "/assets/images/ph-images/caca.png",
-        alt: "Caca",
-        h2: "Bendahara",
-        h4: "Dhiya Ulhaq"
-    },
-    {
-        img: "/assets/images/ph-images/amel.png",
-        alt: "Amel",
-        h2: "Infentaris",
-        h4: "Amel"
-    },
-    {
-        img: "/assets/images/ph-images/mei.png",
-        alt: "Mei",
-        h2: "Sekretaris",
-        h4: "Mei Tri"
-    }
-];
-
-const addDatatoHTML = () => {
-    listAnggotaHTML.innerHTML = "";
-    if (listAnggota.length > 0) {
-        listAnggota.forEach(anggota => {
-            const newAnggota = document.createElement("div");
-            newAnggota.classList.add("itemAnggota");
-            newAnggota.innerHTML = `
-            <img src="${anggota.img}" alt="${anggota.alt}" class="img-anggota"/>
-            <h2>${anggota.h2}</h2>
-            <h4>${anggota.h4}</h4>
-            `;
-            listAnggotaHTML.appendChild(newAnggota);
-        });
-    }
-}
-
-addDatatoHTML();
-
 // Proker
-const listProkerHTML = document.querySelector(".listProker");
+const listProkerHTML = document.querySelector(".card-proker");
 
-// Nambah Data proker disini!!
 const listProker = [
     {
         h1: "Rapat Kerja",
-        p: "deskripsi proker"
+        p: "Rapat setiap bulan",
     },
     {
-        h1: "Rapat Besar",
-        p: "deskripsi proker"
+        h1: "Triwulan",
+        p: "Rapat setiap 3 bulan sekali dan LPJ",
     },
     {
         h1: "IT Specta",
-        p: "deskripsi proker"
-    },
-    {
-        h1: "Kongres Ketua IT Specta",
-        p: "deskripsi proker"
-    },
-    {
-        h1: "Sinan",
-        p: "deskripsi proker"
+        p: "Event olahraga mahasiswa TI UMY",
     }
-
 ];
 
 const addListProker = () => {
@@ -88,12 +23,75 @@ const addListProker = () => {
             const newProker = document.createElement("div");
             newProker.classList.add("itemProker");
             newProker.innerHTML = `
-            <h3 class="header-proker">${proker.h1}</h3>
+            <h1>${proker.h1}</h1>
             <p>${proker.p}</p>
             `;
             listProkerHTML.appendChild(newProker);
         });
+    } else {
+        listProkerHTML.innerHTML = "No content found!!";
     }
 }
 
 addListProker();
+
+// Anggota Divisi
+
+const listAnggotaHTML = document.querySelector(".card-anggota");
+
+const listAnggota = [
+    {
+        img: "../assets/images/ph-images/salman.png",
+        h3: "Salman Firdaus",
+        h6: "Ketua Himpunan KMTI"
+    },
+    {
+        img: "../assets/images/ph-images/amel.png",
+        h3: "Amel",
+        h6: "Sekretaris Utama"
+    },
+    {
+        img: "../assets/images/ph-images/mei.png",
+        h3: "Mei Tri Cahyani",
+        h6: "Sekretaris Jendral"
+    },
+    {
+        img: "../assets/images/ph-images/caca.png",
+        h3: "Dhiya Ulhaq",
+        h6: "Bendahara"
+    },
+    {
+        img: "../assets/images/ph-images/yoga.png",
+        h3: "Yoga Prasetya",
+        h6: "Wakil Ketua KMTI"
+    }
+];
+
+const addListAnggota = () => {
+    listAnggotaHTML.innerHTML = "";
+    if (listAnggota.length > 0) {
+        listAnggota.forEach(anggota => {
+            const newAnggota = document.createElement("div");
+            newAnggota.classList.add("itemAnggota");
+            newAnggota.innerHTML = `
+            <img src="${anggota.img}" alt="Foto anggota" />
+            <h3>${anggota.h3}</h3>
+            <h6>${anggota.h6}</h6>
+            `;
+            listAnggotaHTML.appendChild(newAnggota);
+        });
+    }
+}
+
+addListAnggota();
+
+// Banner atau background generator
+const generateImg = () => {
+    const banner = document.querySelector(".banner");
+    const addImg = document.createElement("img");
+    addImg.src = "../assets/images/ph-images/bg-ph.png";
+    addImg.alt = "Background PH";
+    banner.appendChild(addImg);
+}
+
+generateImg();
