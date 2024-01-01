@@ -11,9 +11,34 @@ const listProker = [
         p: "Rapat setiap 3 bulan sekali dan LPJ",
     },
     {
-        h1: "IT Specta",
-        p: "Event olahraga mahasiswa TI UMY",
+        h1: "Rapat Besar",
+        p: "Setiap Akhir Bulan",
+    },
+    {
+        h1: "Kongres Ketua Ketua Angkatan 2023",
+        p: "Minggu kedua di Bulan November 2023"
+    },
+    {
+        h1: "Kongres Pemilihan Ketua IT SPECTA XII",
+        p: "Minggu kedua di Bulan November 2023"
+    },
+    {
+        h1: "IT SPECTA X",
+        p: "Januari - Maret 2024"
+    },
+    {
+        h1: " Kongres Ketua Mataf Prodi",
+        p: "3 bulan sebelum Mataf Universitas di bulan Juni 2022"
+    },
+    {
+        h1: "Sinan",
+        p: "di minggu kedua bulan agustus 2024"
+    },
+    {
+        h1: "panitia Pelantikan Periode 2024/2025",
+        p: "di minggu kedua atau ke tiga bulan september 2024"
     }
+
 ];
 
 const addListProker = () => {
