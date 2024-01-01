@@ -57,12 +57,13 @@ body.dark_theme {
   }
   #navbar {
     --navbar-height: 64px;
-    position: absolute;
+    position: fixed;
+    top: 0; /* Atur top: 0; agar navbar menempel di bagian atas saat di-scroll */
+    width: 100%; /* Gunakan lebar penuh */
     height: var(--navbar-height);
     background-color: var(--navbar-bg-color);
-    left: 0;
-    right: 0;
     box-shadow: 10px 10px 40px rgba(202, 253, 0, 0.15);
+    z-index: 1000; /* Tambahkan z-index agar navbar tetap di atas konten */
   }
   .navbar-container {
     display: flex;
@@ -148,10 +149,58 @@ body.dark_theme {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
-  .social-media{
-    display: flex;
-    justify-content: space-evenly;
+
+/*-----------------------------------*\
+ * #footer
+/* \*-----------------------------------* */
+
+
+footer {
+  margin-top: auto; /* Menempatkan footer di paling bawah */
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  text-align: left;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+
+.item {
+  margin-right: 10px; /* Mengatur jarak kanan antara elemen-elemen */
+}
+
+p {
+  text-align: left;
+  color: #888;
+  margin: 0; /* Menghapus margin bawah pada tulisan */
+}
+
+.social-media {
+  margin-top: 10px;
+}
+
+.social-media a {
+  margin: 0 5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.social-media img {
+  width: 20px; /* Sesuaikan ukuran ikon sosial media */
+  height: 20px; /* Sesuaikan ukuran ikon sosial media */
+}
+
+/* Media Query untuk layar dengan lebar kurang dari atau sama dengan 600px */
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column;
   }
+
+  .social-media {
+    margin-top: 15px;
+  }
+}
+
 
 /*-----------------------------------*\
  * #Anggota
