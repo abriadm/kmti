@@ -1,29 +1,9 @@
 /*-----------------------------------*\
  * style.css
 \*-----------------------------------*/
-
 /**
  * css since 2023 by huda
  */
-
-
-/*-----------------------------------*\
- * #THEME COLORS warna acuan untuk tema
-\*-----------------------------------*/
-
-body.dark_theme {
-
-  --bg-primary: hsl(0, 0%, 0%);
-  --bg-secondary: hsl(0, 0%, 19%);
-  --color-primary: hsl(0, 14%, 87%);
-  --color-secondary: hsl(0, 0%, 62%);
-  --card-shadow: rgba(145, 239, 255, 0.5);
-  --input-bg: hsl(10, 0%, 16%);
-
-  --shadow-1: 10px 10px 40px var(--card-shadow);
-
-}
-
 /* Base CSS */
 :root {
   --navbar-bg-color: hsl(0, 0%, 15%);

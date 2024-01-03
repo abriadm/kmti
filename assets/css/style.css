@@ -566,31 +566,29 @@ main {
 .listDivisi {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 10px;
   place-items: center;
+  padding: 40px 100px;
 }
 
-.itemDivisi {
-  background: var(--bg-secondary);
-  padding: 10px;
-  margin: 0;
-  border-radius: 13px;
-  /* box-shadow: 7px 8px 15px grey; */
-  width: 270px;
-  height: 100px;
-  transition: all 0.2s;
+.listDivisi .itemDivisi {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  border-radius: var(--radius-12);
-  box-shadow: var(--shadow-1);
-  transition: var(--transition-1);
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px;
 }
+
+.listDivisi .itemDivisi img {
+  width: 450px;
+}
+
 
 .itemDivisi h1 {
   font-size: 35px;
+  text-align: center;
+  color: #c0bcbc;
 }
 
 .itemDivisi:is(:hover, :focus) {
@@ -598,6 +596,32 @@ main {
 }
 .itemDivisi:hover {
   box-shadow: 5px 5px 10px grey;
+}
+
+/* Responsive gambar */
+@media only screen and (max-width:600px){
+  .listDivisi .itemDivisi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .listDivisi {
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 30px;
+    place-items: center;
+    padding: 40px 0;
+  }
+  .listDivisi .itemDivisi img {
+    width: 450px;
+  }
+  .itemDivisi h1{
+    font-size: 18px;
+  }
 }
 
 /*-----------------------------------*\
@@ -1045,16 +1069,7 @@ textarea.input-field {
   /**
    * DIVISI
    */
-  .listDivisi {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    padding: 50px 10px;
-  }
-
-  .itemDivisi {
-    width: 100%;
-  }
+  
 
   /**
    * ABOUT US

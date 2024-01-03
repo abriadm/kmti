@@ -2,7 +2,7 @@ const generateImg = () => {
     const banner = document.querySelector(".banner");
     const addImg = document.createElement("img");
     addImg.src = "../assets/images/humas-images/bg-humas.png";
-    addImg.alt = "Background PH";
+    addImg.alt = "Background humas";
     banner.appendChild(addImg);
 }
 

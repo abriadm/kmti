@@ -38,8 +38,7 @@
     <!-- 
     - custom css link
     -->
-    <link rel="stylesheet" href="../assets/css/pages.css">
-    <link rel="stylesheet" href="../assets/css/style1.css">
+    <link rel="stylesheet" href="/assets/css/contactus.css">
 
     <!-- 
     - google font link
@@ -52,10 +51,10 @@
 </head>
 
 <body>
+
 <!-- 
     - #HEADER
   -->  
-
     <header class="header" data-header>
         <div class="container">
 
@@ -66,66 +65,40 @@
                 </figure>
 
         <div class="navbar-actions">
-        <!--
-        <select name="language" id="lang">
-            <option value="en">En</option>
-            <option value="ar">Ar</option>
-        </select>
-        -->
         <button class="dark_theme" aria-label="Change Theme" title="Change Theme" data-theme-btn>
             <span class="icon"></span>
         </button>
-
         </div>
-
             <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
                 
                 <span class="one"></span>
                 <span class="two"></span>
                 <span class="three"></span>
-            
             </button>
-
         <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-
+          <ul class="navbar-list">
             <li>
             <a href="#contactUs" class="navbar-link">contact Us.</a>
             </li>
-
             <li>
             <a href="#about" class="navbar-link">About.</a>
             </li>
-
-
-
-            </ul>
+          </ul>
         </nav>
-
         </div>
     </header>
 
-    
+<!-- content -->
     <main>
-        
         <article class="container">
-    
-    
             <!-- 
             - #ABOUT
             -->
-    
             <div class="hero-content">
-    
                 <h1 class="h1 logo" style="text-align: center;">
                     <a href="#"><span></span></a>
                     </h1>
-    
-            
-    
             </div>
-
-
         <section class="about" id="about">
                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
@@ -148,115 +121,53 @@
                       <span class="sr-only">Next</span>
                     </a>
                   </div>
-
-
-
                 </div>
-
                 <form action="https://formcarry.com/s/LxVEbStyS" method="POST" accept-charset="UTF-8" class="contact-form">
-
-
             <div class="form-wrapper">
                 <label for="name" class="form-label" style="font-size: 2em;">contact us </label>
-
                 <label for="name" class="form-label">Name</label>
-
                 <div class="input-wrapper">
-
                 <input type="text" name="name" id="name" required placeholder="Nama Kamu" class="input-field">
-
                 <ion-icon name="person-circle"></ion-icon>
-
                 </div>
-
             </div>
 
             <div class="form-wrapper">
-
                 <label for="email" class="form-label">Email</label>
-
                 <div class="input-wrapper">
-
                 <input type="email" name="email" id="email" required placeholder="Email kamu" class="input-field">
-
                 <ion-icon name="mail"></ion-icon>
-
                 </div>
-
             </div>
 
             <div class="form-wrapper">
-
                 <label for="phone" class="form-label">Phone</label>
-
                 <div class="input-wrapper">
-
                 <input type="tel" name="phone" id="phone" required placeholder="Nomor telpon kamu" class="input-field">
-
                 <ion-icon name="call"></ion-icon>
-
                 </div>
-
             </div>
 
             <div class="form-wrapper">
-
                 <label for="message" class="form-label">Message</label>
-
                 <div class="input-wrapper">
-
                 <textarea name="message" id="message" required placeholder="Tulis pesan kamu..."
                     class="input-field"></textarea>
-
                 <ion-icon name="chatbubbles"></ion-icon>
-
                 </div>
-
             </div>
-
             <button type="submit" class="btn btn-primary">Send</button>
-
-            </form>
-
-
-
-              </section>
-
+          </section>
     </article>
 </main>
-
-
-<!-- Modal -->
-
-<div class="modal">
-  <div class="modal-content">
-    <span class="close-button">&times;</span>
-    <br />
-    <br />
-    <div class="contener">
-      <iframe class="responsive-iframe" id="modal-context"></iframe>
-    </div>
-    <center>
-      <h1 class="h1 logo">
-        <a style="color: black; margin-top: 18px">KM<span>TI</span></a>
-      </h1>
-    </center>
-  </div>
-
-</div>
-
-
 <!-- 
   - #FOOTER
 -->
-
 <li>
     <ul class="contac-social-list">
-
     <li>
         <a href="https://www.instagram.com/kmti_umy/" target="_blank" class="contact-social-link">
         <div class="tooltip">Instagram</div>
-
         <ion-icon name="logo-instagram"></ion-icon>
         </a>
     </li>
@@ -265,7 +176,6 @@
         <a href="https://www.facebook.com/profile.php?id=100009568085884" target="_blank"
         class="contact-social-link">
         <div class="tooltip">Facebook</div>
-
         <ion-icon name="logo-facebook"></ion-icon>
         </a>
     </li>
@@ -274,61 +184,35 @@
         <a href="https://twitter.com/kmti_umy?s=21&t=riPXwgAy-rEJd7CxMRLKdQ" target="_blank"
         class="contact-social-link">
         <div class="tooltip">Twitter</div>
-
         <ion-icon name="logo-twitter"></ion-icon>
         </a>
     </li>
-
     </ul>
 </li>
 
-
-
 <footer class="footer">
   <div class="container">
-
     <p class="h1 logo">
-      <a href="#">
-        KM<span>TI</span>
-      </a>
     </p>
-
     <p class="copyright">
       &copy; KMTI <a href="#">Periode Kepengurusan</a> 2023/2024
     </p>
-
   </div>
 </footer>
-
-
-
-
-
 <!-- 
   - #GO TO TOP
 -->
-
 <a href="#top" class="go-top" data-go-top title="Go to Top">
     <ion-icon name="arrow-up"></ion-icon>
 </a>
-
-
-
-
-
 <!-- 
     - custom js link
 -->
 <script src="./assets/js/script.js"></script>
-
 <!-- 
     - ionicon link
 -->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-
 </body>
-
 </html>
