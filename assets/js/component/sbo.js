@@ -68,7 +68,7 @@ const listAnggotaHTML = document.querySelector(".card-anggota");
 
 const listAnggota = [
     {
-        img: "../assets/images/sbo-images/Dzaky.png",
+        img: "../assets/images/sbo-images/dzaky.png",
         h3: "Dzaky Nauval",
         h6: "Ketua Divisi"
     },

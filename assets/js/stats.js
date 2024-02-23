@@ -41,7 +41,7 @@ const listDivisi = [
 
     {
         img: "/assets/images/sbo-images/bg-sbo.png",
-        link: '/Pages/SBO.html',
+        link: '/Pages/sbo.html',
         h1: 'SBO'
        
     },
