@@ -1168,11 +1168,13 @@ textarea.input-field {
 
 
 
-@media (min-width: 370px) {
+@media (min-width: 320px) and (max-width: 550px) {
   /**
 * PROJECT
 */
-
+.listDivisi .itemDivisi img {
+  width: 100%;
+}
   .project-list {
     column-count: 2;
     column-gap: 25px;
@@ -1196,11 +1198,38 @@ textarea.input-field {
     max-width: 200px;
   }
 
+  .listDivisi {
+    display: flex;
+    margin: 3rem 5;
+    justify-content: center;
+    gap: 2rem;
+    font-family: "Roboto", sans-serif;
+    flex-wrap: wrap;
+    padding: 0 10%;
+  }
 
+  .itemDivisi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    text-decoration: none;
+    color: black;
+    font-size: 200px;
+    font-weight: 700;
+    overflow: hidden;
+    border-radius: 13px;
+    transition: background-color 0.5s;
+  }
 
+  .itemDivisi:hover {
+    cursor: pointer;
+    background-color: #171717;
+    box-shadow: none;
+  }
+  
 
 }
-
 
 
 /**
@@ -1743,6 +1772,26 @@ textarea.input-field {
   .section-title {
     max-width: 460px;
   }
+
+  .itemDivisi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.3rem;
+    text-decoration: none;
+    color: black;
+    font-size: 200px;
+    font-weight: 700;
+    overflow: hidden;
+    border-radius: 13px;
+    transition: background-color 0.5s;
+  }
+
+  .itemDivisi:hover {
+    cursor: pointer;
+    background-color: #171717;
+    box-shadow: none;
+}
 
   /**
    * HERO

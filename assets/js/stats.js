@@ -4,7 +4,7 @@ const listDivisi = [
     {
         img: "/assets/images/ph-images/bg-ph.png",
         link: '/Pages/ph.html',
-        h1: 'PH'
+        h1: 'PENGURUS HARIAN'
        
     },
     {
@@ -63,8 +63,10 @@ const addDatatoHTML = () => {
             const newDivisi = document.createElement("div");
             newDivisi.classList.add('itemDivisi');
             newDivisi.innerHTML = `
-            <img src="${divisi.img}" alt="Foto anggota" />
-            <a href="${divisi.link}"><h1>${divisi.h1}</h1></a>
+            <a href="${divisi.link}">
+                <img src="${divisi.img}" alt="Foto anggota" />
+                <h1>${divisi.h1}</h1>
+            </a>
             `;
             listDivisiHTML.appendChild(newDivisi);
         });
